@@ -1,0 +1,136 @@
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-tiny: 440px;
+$contrastTxt: #fff;
+$primaryBtnColor: #000;
+$primaryBtnHover: #5d6466;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: "Source sans pro", sans-serif;
+  letter-spacing: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Merriweather, serif;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  text-align: left;
+}
+
+@media only screen and (max-width: $breakpoint-tiny) {
+  form {
+    text-align: center;
+  }
+}
+
+input {
+  background-color: #edf2f5;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  padding: 20px 15px;
+  max-width: 300px;
+  transition: 0.2s;
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 10px 10px;
+    width: 200px;
+  }
+  @media only screen and (max-width: $breakpoint-tiny) {
+    width: 160px;
+  }
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 14px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 100px auto 0;
+  max-width: 1200px;
+  padding-left: 20px;
+  transition: 0.2s;
+  @media only screen and (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0 50px;
+  }
+  @media only screen and (max-width: $breakpoint-phone) {
+    margin-top: 26px;
+    padding: 0 30px;
+  }
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  @media only screen and (max-width: $breakpoint-tiny) {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.search {
+  flex: 2;
+}
+
+.top-movie-container {
+  height: 516px;
+  overflow-y: scroll;
+  @media only screen and (max-width: $breakpoint-tablet) {
+    height: unset;
+    overflow-y: unset;
+  }
+}
+
+::-webkit-scrollbar {
+  background: #edf2f5;
+  border-radius: 3px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primaryBtnColor;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primaryBtnHover;
+}
+
+.top-movies-heading {
+  font-weight: 900;
+  margin-bottom: 20px;
+  @media only screen and (max-width: $breakpoint-tablet) {
+    margin-top: 20px;
+  }
+  @media only screen and (max-width: $breakpoint-phone) {
+    margin-top: 36px;
+  }
+}

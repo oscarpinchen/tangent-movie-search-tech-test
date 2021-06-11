@@ -1,0 +1,19 @@
+$breakpoint-phone: 576px;
+$contrastTxt: #fff;
+$primaryBtnColor: #000;
+$primaryBtnHover: #5d6466;
+
+.search-btn {
+  background: $primaryBtnColor;
+  border-radius: 0 3px 3px 0;
+  color: $contrastTxt;
+  font-size: 16px;
+  padding: 20px 40px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background: $primaryBtnHover;
+  }
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 10px 20px;
+  }
+}

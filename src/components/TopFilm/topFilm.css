@@ -1,0 +1,27 @@
+.top-movie {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.top-movie-info {
+  margin-left: 12px;
+  margin-right: 16px;
+}
+
+.top-movie-poster {
+  max-width: 100px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-movie-poster {
+    max-width: 140px;
+  }
+}
+/*# sourceMappingURL=topFilm.css.map */
